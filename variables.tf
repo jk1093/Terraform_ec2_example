@@ -1,30 +1,34 @@
 // Module specific variables
 
-variable "instance_name" {
+variable "instance_name" 
+{
   description = "Used to populate the Name tag. This is done in main.tf"
   default = "Terraformtest"
-  
+ }
+
+variable "instance_type" 
+{
+  description = "Used to specify instance type"
+  default = "t2.micro"
 }
 
-variable "instance_type" {
-          default = "t2.micro"
-          }
-
-variable "ami_id" {
+variable "ami_id" 
+{
   description = "The AMI to use"
   default = "ami-18f8df7d"
 }
 
-variable "number_of_instances" {
+variable "number_of_instances" 
+{
   description = "number of instances to make"
   default = 2
 }
 
-variable "key_name" {
+variable "key_name" 
+{
    description = "name of the key"
    default = "XXXXXXX"
 }
-
 
 // Variables for providers used in this module
 variable "aws_access_key" 
