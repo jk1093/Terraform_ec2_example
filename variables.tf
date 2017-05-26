@@ -15,7 +15,7 @@ variable "instance_type"
 variable "ami_id" 
 {
   description = "The AMI to use"
-  default = "ami-18f8df7d"
+  default = "ami-XXXXXXX"
 }
 
 variable "number_of_instances" 
